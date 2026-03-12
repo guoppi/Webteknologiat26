@@ -1,2 +1,2 @@
 # Webteknologiat26
-Julkinen repo Pages varten
+Täältä löytyy koulutehtävät, jotka vaativat julkaisun Pagesin kautta.
