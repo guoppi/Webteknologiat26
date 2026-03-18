@@ -1,0 +1,44 @@
+.grid-container{
+    display: grid;
+    grid-template-rows: 100px auto 100px;
+    grid-template-columns: 400px auto;
+    height: 100vh;
+    grid-template-areas:
+            "header header"
+            "sidebar main"
+            "footer footer";
+}
+
+.header{
+    grid-area: header;
+    background-color: blanchedalmond;
+    display: flex;
+    felx-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    background-color: black;
+    color: white;
+}
+
+.main{
+    grid-area: main;
+    background-color: pink;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: orangered;
+}
+
+.logo{
+    height: 80%;
+
+}
+.logo1{
+    display: flex;
+    height: 50%;
+}
