@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <title>Lomake</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- Ulkoinen CSS-tiedosto -->
   <link rel="stylesheet" href="css3/lomake.css" />
 </head>
 
@@ -12,39 +11,32 @@
 
   <form class="form">
 
-    <!-- CONTACT INFORMATION -->
     <fieldset class="box" id="contact">
       <legend>Contact information:</legend>
 
-      <!-- Grid, joka jäljittelee alkuperäistä taulukkoasettelua -->
       <div class="grid contact-grid">
-        <!-- Rivi 1 -->
         <div class="label"><label for="fname">First name:</label></div>
         <div class="input"><input type="text" id="fname" name="fname" /></div>
         <div class="side-title">Preferred contact method:</div>
 
-        <!-- Rivi 2 -->
         <div class="label"><label for="lname">Last name:</label></div>
         <div class="input"><input type="text" id="lname" name="lname" /></div>
         <div class="side-input">
           <label><input type="checkbox" name="preferred" value="email" /> Email</label>
         </div>
 
-        <!-- Rivi 3 -->
         <div class="label"><label for="email_input">Email:</label></div>
         <div class="input"><input type="email" id="email_input" name="email" /></div>
         <div class="side-input">
           <label><input type="checkbox" name="preferred" value="telephone" /> Telephone</label>
         </div>
 
-        <!-- Rivi 4 -->
         <div class="label"><label for="telephone_input">Telephone:</label></div>
         <div class="input"><input type="tel" id="telephone_input" name="telephone" /></div>
         <div class="side-empty"></div>
       </div>
     </fieldset>
 
-    <!-- FEEDBACK -->
     <fieldset class="box" id="feedback">
       <legend>Feedback:</legend>
 
