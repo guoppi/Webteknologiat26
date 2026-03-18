@@ -1,67 +1,64 @@
 <!DOCTYPE html>
 <html lang="fi">
 <head>
-    <title>Omat kurssit</title>
     <meta charset="UTF-8">
+    <title>Omat kurssit</title>
+
+    css3/html.css
 </head>
 
 <body>
 
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOwQk5ZWFSdLNd8HlonVNTOxODDbZTJAGcEQ&s" 
-     alt="LAB-ammattikorkeakoulun logo" width="250" height="51">
-<p><small>Kuva lähde: LAB University of Applied Sciences</small></p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOwQk5ZWFSdLNd8HlonVNTOxODDbZTJAGcEQ&s"
+         alt="LAB-ammattikorkeakoulun logo"
+         class="logo">
 
-<h1>Omat kurssini</h1>
+    <p class="source"><small>Kuva lähde: LAB University of Applied Sciences</small></p>
 
-<p>Tällä sivulla esittelen kursseja, joita olen käynyt tai olen parhaillaan käymässä.</p>
+    <h1>Omat kurssini</h1>
 
-<p>
-Tässä linkki koulun sivuille:
-<a href="https://lab.fi/fi">LAB University of Applied Science</a>
-</p>
+    <p>
+        Tällä sivulla esittelen kursseja, joita olen käynyt tai olen parhaillaan käymässä.
+    </p>
 
-<h2>Kurssilista</h2>
-<ul>
-    <li>Ohjelmoinnin perusteet – peruskäsitteet, muuttujat, ehdot, silmukat</li>
-    <li>Olio-ohjelmointi – luokat, oliot, perintä</li>
-    <li>Tietokannat – SQL, relaatiomalli</li>
-    <li>Matematiikka – funktiot, yhtälöt, alv</li>
-    <li>Englanti – kirjallinen ja suullinen englanti työelämässä</li>
-</ul>
+    <p>
+        Tässä linkki koulun sivuille:
+        LAB University of Applied Science</a>
+    </p>
 
-<h2>Kurssit taulukossa</h2>
+    <h2>Kurssilista</h2>
 
-<table style="border:1px solid black; border-collapse: collapse;">
-    <tr>
-        <th style="border:1px solid black; padding:4px;">Kurssi</th>
-        <th style="border:1px solid black; padding:4px;">Opintopisteet</th>
-    </tr>
+    <ul class="course-list">
+        <li>Ohjelmoinnin perusteet – peruskäsitteet, muuttujat, ehdot, silmukat</li>
+        <li>Olio-ohjelmointi – luokat, oliot, perintä</li>
+        <li>Tietokannat – SQL, relaatiomalli</li>
+        <li>Matematiikka – funktiot, yhtälöt, alv</li>
+        <li>Englanti – kirjallinen ja suullinen englanti työelämässä</li>
+    </ul>
 
-    <tr>
-        <td style="border:1px solid black; padding:4px;">Ohjelmoinnin perusteet</td>
-        <td style="border:1px solid black; padding:4px;">5</td>
-    </tr>
+    <h2>Kurssit (ilman taulukkoa)</h2>
 
-    <tr>
-        <td style="border:1px solid black; padding:4px;">Olio-ohjelmointi</td>
-        <td style="border:1px solid black; padding:4px;">5</td>
-    </tr>
+    <div class="course-grid">
 
-    <tr>
-        <td style="border:1px solid black; padding:4px;">Tietokannat</td>
-        <td style="border:1px solid black; padding:4px;">5</td>
-    </tr>
+        <div class="header">Kurssi</div>
+        <div class="header">Opintopisteet</div>
 
-    <tr>
-        <td style="border:1px solid black; padding:4px;">Matematiikka</td>
-        <td style="border:1px solid black; padding:4px;">5</td>
-    </tr>
+        <div class="cell">Ohjelmoinnin perusteet</div>
+        <div class="cell">5</div>
 
-    <tr>
-        <td style="border:1px solid black; padding:4px;">Englanti</td>
-        <td style="border:1px solid black; padding:4px;">3</td>
-    </tr>
-</table>
+        <div class="cell">Olio-ohjelmointi</div>
+        <div class="cell">5</div>
+
+        <div class="cell">Tietokannat</div>
+        <div class="cell">5</div>
+
+        <div class="cell">Matematiikka</div>
+        <div class="cell">5</div>
+
+        <div class="cell">Englanti</div>
+        <div class="cell">3</div>
+
+    </div>
 
 </body>
 </html>
