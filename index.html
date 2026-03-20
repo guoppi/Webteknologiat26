@@ -7,10 +7,17 @@
     <style>
         body {
             font-family: "Segoe UI", Arial, sans-serif;
-            background: #eef2f7;
+            background:
+            linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+            url("kuvat/maxresdefault.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            min-height: 100vh;
+
             padding: 40px;
             text-align: center;
-            color: #222;
+            color: #fff; /* parempi kontrasti tumman overlayn kanssa */
         }
         h1 { font-size: 32px; margin-bottom: 25px; }
         .links {
