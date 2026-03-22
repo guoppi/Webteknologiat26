@@ -9,7 +9,7 @@
   --focus: rgba(75,108,183,0.35);
   --shadow: 0 6px 20px rgba(0,0,0,0.08);
 }
-<!-- Root on kuin käytettäisiin c# määriteltyjä muuttujia, tässä tapauksessa const eli esim bg: #xxxxx, määritelty bg olemaan ¤xxxxx, jolloin esim bodyssa background voidaan käyttää var-->
+/* :root toimii kuin "teemavakioiden" keskus: var(--bg) jne. */
 * { box-sizing: border-box; }
 
 html, body {
