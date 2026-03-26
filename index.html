@@ -1,72 +1,71 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="fi">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
-        integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>Etusivu – Webteknologiat</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background:
+                linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+                url("kuvat/maxresdefault.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            min-height: 100vh;
+
+            padding: 40px;
+            text-align: center;
+            color: #fff;
+            
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-bottom: 25px;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        a {
+            background: #4b6cb7;
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 18px;
+            transition: 0.2s;
+            display: block;
+        }
+
+        a:hover {
+            background: #395493;
+        }
+    </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#"><i class="bi bi-camera"></i></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Linkit
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="lomake.html">Lomake</a></li>
-                            <li><a class="dropdown-item" href="html.html">Kurssisivut</a></li>
-                            <li>
-                                
-                        </ul>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
-        </div>
-    </nav>
 
-    <div class="container my-5">
-        <h1>Webteknologiat</h1>
-        <div class="col-lg-8 px-0">
-            <p class="fs-5"></p>
-            <p>Alla oleva laatikosta pääset navigoimaan sivuille. Myös dropdown valikosta voit siirtyä sivuille.</p>
+    <h1>Tervetuloa Webteknologiat-projektiin</h1>
 
-            <hr class="col-1 my-4">
+    <p>Valitse sivu:</p>
 
-            <a href="lomake.html" class="btn btn-primary">Lomake</a>
-            <a href="html.html" class="btn btn-secondary">Kurssisivu</a>
-            <a href="css3/grid.css" class="btn btn-secondary">grid.css</a>
-            <a href="css3/html.css" class="btn btn-danger">html.css</a>
-            <a href="css3/lomake.css" class="btn btn-primary">lomake.css</a>
-        </div>
+    <div class="links">
+        <a href="lomake.html">Avaa lomake</a>
+        <a href="html.html">Avaa kurssit</a>
+        <a href="css3/lomake.css">Näytä lomake.css</a>
+        <a href="css3/grid.css">Näytä grid.css</a>
+        <a href="css3/html.css">Näytä html.css</a>
+        <a href="bootsrap/index.html">CSS OSA 2</a>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
-    <script src="main.js"></script>
 </body>
 
 </html>
