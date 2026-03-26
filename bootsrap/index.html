@@ -20,11 +20,11 @@
 
 <body>
 
-    <!-- NAVbar navbar-expand-lg navbar-dark bg-dark">
+    <!-- NAVIGOINTIPALKki -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            #HTML-Opas</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false"
+            <a class="navbar-brand" href="#">HTML-Opas</a>
+            <button class           data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -45,8 +45,9 @@
         <h1 class="mb-4">HTML-perusrakenne ja tärkeimmät tagit</h1>
 
         <p>
-            HTML-sivut rakentuvat yksinkertaisista tunnisteista eli *tageista*.  
-            Alla on selitetty yleisimmät perusosat:
+            HTML-sivu koostuu perusosista, jotka ovat selkeitä ja helppoja hahmottaa.  
+            Kun ymmärtää muutaman olennaisen tagin, saa rakennettua jo toimivan sivun.  
+            Alla käyn läpi rakenteen ja keskeiset tagit lyhyesti ja käytännönläheisesti.
         </p>
 
         <!-- HTML-perusrakenne -->
@@ -67,9 +68,9 @@
 
         <p><strong>Selitykset:</strong></p>
         <ul>
-            <li><strong>&lt;html&gt;</strong> – kertoo selaimelle, mistä HTML alkaa ja mihin se loppuu.</li>
-            <li><strong>&lt;head&gt;</strong> – sisältää sivun taustatiedot kuten tyylit ja otsikon.</li>
-            <li><strong>&lt;body&gt;</strong> – sisältää kaiken näkyvän sisällön: tekstin, kuvat, linkit, navigaation jne.</li>
+            <li><strong>&lt;html&gt;</strong> – koko sivun kehys. Kaikki sisältö on tämän sisällä.</li>
+            <li><strong>&lt;head&gt;</strong> – asetukset, otsikko, tyylit ja muu ”taustadata”.</li>
+            <li><strong>&lt;body&gt;</strong> – näkyvä sisältö: teksti, kuvat, linkit ja muu materiaali.</li>
         </ul>
 
         <hr>
@@ -81,8 +82,8 @@
                 <div class="card h-100">
                     <div class="card-body">
                         <h5 class="card-title">&lt;H1&gt;</h5>
-                        <p class="card-text">Otsikkotagi. H1 on suurin otsikko.</p>
-                        <pre>&lt;h1&gt;Tämä on otsikko&lt;/h1&gt;</pre>
+                        <p class="card-text">Sivun pääotsikko. Yleensä käytetään vain kerran.</p>
+                        <pre>&lt;h1&gt;Otsikko&lt;/h1&gt;</pre>
                     </div>
                 </div>
             </div>
@@ -91,8 +92,8 @@
                 <div class="card h-100">
                     <div class="card-body">
                         <h5 class="card-title">&lt;P&gt;</h5>
-                        <p class="card-text">Kappaletagi. Tekstikappaleita varten.</p>
-                        <pre>&lt;p&gt;Tämä on kappale tekstiä.&lt;/p&gt;</pre>
+                        <p class="card-text">Kappale. Yleisin tapa lisätä tekstiä sivulle.</p>
+                        <pre>&lt;p&gt;Tämä on kappale.&lt;/p&gt;</pre>
                     </div>
                 </div>
             </div>
@@ -101,7 +102,7 @@
                 <div class="card h-100">
                     <div class="card-body">
                         <h5 class="card-title">&lt;A&gt;</h5>
-                        <p class="card-text">Linkkitagi – vie toiselle sivulle.</p>
+                        <p class="card-text">Linkki toiselle sivulle tai osoitteeseen.</p>
                         <pre>&lt;a href="sivu.html"&gt;Siirry sivulle&lt;/a&gt;</pre>
                     </div>
                 </div>
@@ -111,7 +112,7 @@
                 <div class="card h-100">
                     <div class="card-body">
                         <h5 class="card-title">&lt;IMG&gt;</h5>
-                        <p class="card-text">Kuvatagi.</p>
+                        <p class="card-text">Kuvan lisääminen sivulle.</p>
                         <pre>&lt;img src="kuva.jpg" alt="Kuvaus"&gt;</pre>
                     </div>
                 </div>
@@ -121,7 +122,7 @@
                 <div class="card h-100">
                     <div class="card-body">
                         <h5 class="card-title">&lt;BR&gt;</h5>
-                        <p class="card-text">Rivinvaihto. Ei lopetustagia.</p>
+                        <p class="card-text">Rivinvaihto ilman uuden kappaleen aloittamista.</p>
                         <pre>Rivi 1&lt;br&gt;Rivi 2</pre>
                     </div>
                 </div>
@@ -135,8 +136,8 @@
         <h2>CSS-muotoilu</h2>
 
         <p>
-            Sivun ulkoasu määritellään CSS:llä (Cascading Style Sheets).  
-            Esimerkiksi näin:
+            CSS määrittää sivun ulkoasun. Yksi sääntö vaikuttaa kaikkiin kohtiin, jotka osuvat siihen selektoriin.  
+            Esimerkiksi &lt;p&gt;-tagien muotoilu:
         </p>
 
         <pre>
@@ -147,12 +148,12 @@ p {
         </pre>
 
         <p>
-            Yllä oleva sääntö tekee kaikista &lt;p&gt;-kappaleista sinisiä ja suurempia.
+            Tämä tekee kaikista kappaleista sinisiä ja hieman suurempia.
         </p>
 
         <h3>CSS:n lisääminen</h3>
         <ul>
-            <li><strong>HTML-tiedoston sisälle:</strong> &lt;style&gt;...&lt;/style&gt;</li>
+            <li><strong>HTML-sivun sisälle:</strong> &lt;style&gt; ... &lt;/style&gt;</li>
             <li><strong>Erilliseen tiedostoon:</strong> &lt;link rel="stylesheet" href="styles.css"&gt;</li>
         </ul>
 
@@ -162,19 +163,19 @@ p {
         <h2>Bootstrapin hyödyntäminen</h2>
 
         <p>
-            Bootstrap on CSS-kirjasto, joka tarjoaa valmiita komponentteja ja tyylejä.  
-            Näitä ovat esimerkiksi:
+            Bootstrap tarjoaa valmiita tyylejä ja komponentteja, joiden avulla sivun ulkoasu saadaan toimivaksi nopeasti.  
+            Sen vahvuus on responsiivisuus ja valmiit rakenteet.
         </p>
 
         <ul>
-            <li>Navbar</li>
-            <li>Kortit (cards)</li>
-            <li>Painikkeet (btn)</li>
-            <li>Grid-järjestelmä responsiiviseen asetteluun</li>
+            <li>Navbar (navigointipalkki)</li>
+            <li>Kortit</li>
+            <li>Painikkeet</li>
+            <li>Grid-asettelu eri näyttöleveyksille</li>
         </ul>
 
         <p>
-            Bootstrap nopeuttaa kehitystä, koska kaikkia tyylejä ei tarvitse kirjoittaa itse.
+            Bootstrap vähentää manuaalisen CSS-koodin tarvetta ja nopeuttaa sivujen tekemistä.
         </p>
 
     </div>
