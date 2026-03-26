@@ -23,18 +23,46 @@
     <!-- NAVIGOINTIPALKki -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
+
             <a class="navbar-brand" href="#">HTML-Opas</a>
-            <button class           data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false"
-                aria-label="Toggle navigation">
+
+            <!-- TÄMÄ KORJATTU! -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+                aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbar">
+
                 <ul class="navbar-nav me-auto">
-                    <li class="nav-item">index.htmlEtusivu</a></li>
-                    <li class="nav-item">lomake.htmlLomake</a></li>
-                    <li class="nav-item">html.htmlHTML-sivu</a></li>
-                </ul>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Etusivu</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="lomake.html">Lomake</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="html.html">HTML-sivu</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownMenu" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
+                            <li>
+                                <p class="dropdown-item-text" style="white-space: normal; max-width: 250px;">
+                                    Dropdown on avattava valikko, jota käytetään navigaatiossa piilottamaan useita
+                                    valintoja yhden otsikon alle. Bootstrapin omat luokat huolehtivat sen toiminnasta.
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+
             </div>
         </div>
     </nav>
@@ -45,8 +73,8 @@
         <h1 class="mb-4">HTML-perusrakenne ja tärkeimmät tagit</h1>
 
         <p>
-            HTML-sivu koostuu perusosista, jotka ovat selkeitä ja helppoja hahmottaa.  
-            Kun ymmärtää muutaman olennaisen tagin, saa rakennettua jo toimivan sivun.  
+            HTML-sivu koostuu perusosista, jotka ovat selkeitä ja helppoja hahmottaa.
+            Kun ymmärtää muutaman olennaisen tagin, saa rakennettua jo toimivan sivun.
             Alla käyn läpi rakenteen ja keskeiset tagit lyhyesti ja käytännönläheisesti.
         </p>
 
@@ -136,7 +164,7 @@
         <h2>CSS-muotoilu</h2>
 
         <p>
-            CSS määrittää sivun ulkoasun. Yksi sääntö vaikuttaa kaikkiin kohtiin, jotka osuvat siihen selektoriin.  
+            CSS määrittää sivun ulkoasun. Yksi sääntö vaikuttaa kaikkiin kohtiin, jotka osuvat siihen selektoriin.
             Esimerkiksi &lt;p&gt;-tagien muotoilu:
         </p>
 
@@ -163,7 +191,8 @@ p {
         <h2>Bootstrapin hyödyntäminen</h2>
 
         <p>
-            Bootstrap tarjoaa valmiita tyylejä ja komponentteja, joiden avulla sivun ulkoasu saadaan toimivaksi nopeasti.  
+            Bootstrap tarjoaa valmiita tyylejä ja komponentteja, joiden avulla sivun ulkoasu saadaan toimivaksi
+            nopeasti.
             Sen vahvuus on responsiivisuus ja valmiit rakenteet.
         </p>
 
