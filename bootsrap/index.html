@@ -1,13 +1,12 @@
-<!doctype html>
-<html lang="fi">
-
-<head>
+<!DOCTYPE html>
+<html lang="fi"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML-opetussivu</title>
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="HTML-opetussivu_files/bootstrap.min.css" rel="stylesheet">
 
     <style>
         pre {
@@ -20,13 +19,14 @@
 
 <body>
 
-    <!-- NAVIGOINTIPALKKI -->
+    <!-- NAVIGOINTIPALKki -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
 
-            <a class="navbar-brand" href="https://guoppi.github.io/Webteknologiat26/">HTML-Opas</a>
+            <a class="navbar-brand" href="#">HTML-Opas</a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+            <!-- TÄMÄ KORJATTU! -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -35,35 +35,32 @@
                 <ul class="navbar-nav me-auto">
 
                     <li class="nav-item">
-                        <a class="nav-link" href="https://guoppi.github.io/Webteknologiat26/">Etusivu</a>
+                        <a class="nav-link" href="https://guoppi.github.io/Webteknologiat26/bootsrap/index.html">Etusivu</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="https://guoppi.github.io/Webteknologiat26/lomake.html">Lomake</a>
+                        <a class="nav-link" href="https://guoppi.github.io/Webteknologiat26/bootsrap/lomake.html">Lomake</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="https://guoppi.github.io/Webteknologiat26/html.html">HTML-sivu</a>
+                        <a class="nav-link" href="https://guoppi.github.io/Webteknologiat26/bootsrap/html.html">HTML-sivu</a>
                     </li>
-
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdownMenu" role="button"
-                            data-bs-toggle="dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownMenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Dropdown
                         </a>
 
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
                             <li>
                                 <p class="dropdown-item-text" style="white-space: normal; max-width: 250px;">
                                     Dropdown on avattava valikko, jota käytetään navigaatiossa piilottamaan useita
-                                    valintoja yhden otsikon alle.
+                                    valintoja yhden otsikon alle. Bootstrapin omat luokat huolehtivat sen toiminnasta.
                                 </p>
                             </li>
                         </ul>
                     </li>
 
-                </ul>
-            </div>
+            </ul></div>
         </div>
     </nav>
 
@@ -74,13 +71,14 @@
 
         <p>
             HTML-sivu koostuu perusosista, jotka ovat selkeitä ja helppoja hahmottaa.
+            Kun ymmärtää muutaman olennaisen tagin, saa rakennettua jo toimivan sivun.
+            Alla käyn läpi rakenteen ja keskeiset tagit lyhyesti ja käytännönläheisesti.
         </p>
 
-        <!-- PERUSRAKENNE -->
+        <!-- HTML-perusrakenne -->
         <h2>HTML-sivun perusrakenne</h2>
 
-        <pre>
-&lt;!doctype html&gt;
+        <pre>&lt;!doctype html&gt;
 &lt;html&gt;
     &lt;head&gt;
         &lt;title&gt;Sivun otsikko&lt;/title&gt;
@@ -92,22 +90,23 @@
 &lt;/html&gt;
         </pre>
 
+        <p><strong>Selitykset:</strong></p>
         <ul>
-            <li><strong>&lt;html&gt;</strong> – koko sivu</li>
-            <li><strong>&lt;head&gt;</strong> – asetukset</li>
-            <li><strong>&lt;body&gt;</strong> – näkyvä sisältö</li>
+            <li><strong>&lt;html&gt;</strong> – koko sivun kehys. Kaikki sisältö on tämän sisällä.</li>
+            <li><strong>&lt;head&gt;</strong> – asetukset, otsikko, tyylit ja muu ”taustadata”.</li>
+            <li><strong>&lt;body&gt;</strong> – näkyvä sisältö: teksti, kuvat, linkit ja muu materiaali.</li>
         </ul>
 
         <hr>
 
-        <!-- TAGIT -->
+        <!-- Kortit tageille -->
         <div class="row row-cols-1 row-cols-md-2 g-4">
 
             <div class="col">
                 <div class="card h-100">
                     <div class="card-body">
-                        <h5>&lt;h1&gt;</h5>
-                        <p>Pääotsikko</p>
+                        <h5 class="card-title">&lt;H1&gt;</h5>
+                        <p class="card-text">Sivun pääotsikko. Yleensä käytetään vain kerran.</p>
                         <pre>&lt;h1&gt;Otsikko&lt;/h1&gt;</pre>
                     </div>
                 </div>
@@ -116,9 +115,9 @@
             <div class="col">
                 <div class="card h-100">
                     <div class="card-body">
-                        <h5>&lt;p&gt;</h5>
-                        <p>Kappale</p>
-                        <pre>&lt;p&gt;Tekstiä&lt;/p&gt;</pre>
+                        <h5 class="card-title">&lt;P&gt;</h5>
+                        <p class="card-text">Kappale. Yleisin tapa lisätä tekstiä sivulle.</p>
+                        <pre>&lt;p&gt;Tämä on kappale.&lt;/p&gt;</pre>
                     </div>
                 </div>
             </div>
@@ -126,10 +125,9 @@
             <div class="col">
                 <div class="card h-100">
                     <div class="card-body">
-                        <h5>&lt;a&gt;</h5>
-                        <p>Linkki</p>
-                        <pre>&lt;a href="https://www.google.com"&gt;Google&lt;/a&gt;</pre>
-                        <a href="https://www.google.com" target="_blank">Testaa linkki</a>
+                        <h5 class="card-title">&lt;A&gt;</h5>
+                        <p class="card-text">Linkki toiselle sivulle tai osoitteeseen.</p>
+                        <pre>&lt;a href="sivu.html"&gt;Siirry sivulle&lt;/a&gt;</pre>
                     </div>
                 </div>
             </div>
@@ -137,10 +135,9 @@
             <div class="col">
                 <div class="card h-100">
                     <div class="card-body">
-                        <h5>&lt;img&gt;</h5>
-                        <p>Kuva</p>
-                        <pre>&lt;img src="kuva.jpg" alt="Kuva"&gt;</pre>
-                        <img src="https://picsum.photos/200" class="img-fluid mt-2">
+                        <h5 class="card-title">&lt;IMG&gt;</h5>
+                        <p class="card-text">Kuvan lisääminen sivulle.</p>
+                        <pre>&lt;img src="kuva.jpg" alt="Kuvaus"&gt;</pre>
                     </div>
                 </div>
             </div>
@@ -148,8 +145,8 @@
             <div class="col">
                 <div class="card h-100">
                     <div class="card-body">
-                        <h5>&lt;br&gt;</h5>
-                        <p>Rivinvaihto</p>
+                        <h5 class="card-title">&lt;BR&gt;</h5>
+                        <p class="card-text">Rivinvaihto ilman uuden kappaleen aloittamista.</p>
                         <pre>Rivi 1&lt;br&gt;Rivi 2</pre>
                     </div>
                 </div>
@@ -157,45 +154,60 @@
 
         </div>
 
-        <hr>
+        <hr class="my-4">
 
-        <!-- CSS -->
+        <!-- CSS selitys -->
         <h2>CSS-muotoilu</h2>
 
-        <pre>
-p {
+        <p>
+            CSS määrittää sivun ulkoasun. Yksi sääntö vaikuttaa kaikkiin kohtiin, jotka osuvat siihen selektoriin.
+            Esimerkiksi &lt;p&gt;-tagien muotoilu:
+        </p>
+
+        <pre>p {
     color: blue;
     font-size: 18px;
 }
         </pre>
 
         <p>
-            CSS määrittää sivun ulkoasun. Sääntö vaikuttaa kaikkiin valittuihin elementteihin.
+            Tämä tekee kaikista kappaleista sinisiä ja hieman suurempia.
         </p>
 
+        <h3>CSS:n lisääminen</h3>
         <ul>
-            <li>&lt;style&gt; sivun sisällä</li>
-            <li>Erillinen CSS-tiedosto</li>
+            <li><strong>HTML-sivun sisälle:</strong> &lt;style&gt; ... &lt;/style&gt;</li>
+            <li><strong>Erilliseen tiedostoon:</strong> &lt;link rel="stylesheet" href="styles.css"&gt;</li>
         </ul>
 
         <hr>
 
-        <!-- BOOTSTRAP -->
-        <h2>Bootstrap</h2>
+        <!-- Bootstrap selitys -->
+        <h2>Bootstrapin hyödyntäminen</h2>
 
         <p>
-            Bootstrap on valmis CSS-kirjasto, joka nopeuttaa kehitystä.
+            Bootstrap tarjoaa valmiita tyylejä ja komponentteja, joiden avulla sivun ulkoasu saadaan toimivaksi
+            nopeasti.
+            Sen vahvuus on responsiivisuus ja valmiit rakenteet.
         </p>
 
         <ul>
-            <li>Navbar</li>
+            <li>Navbar (navigointipalkki)</li>
             <li>Kortit</li>
-            <li>Grid</li>
+            <li>Painikkeet</li>
+            <li>Grid-asettelu eri näyttöleveyksille</li>
         </ul>
+
+        <p>
+            Bootstrap vähentää manuaalisen CSS-koodin tarvetta ja nopeuttaa sivujen tekemistä.
+        </p>
 
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="HTML-opetussivu_files/bootstrap.bundle.min.js"></script>
 
-</body>
-</html>
+
+
+
+</body></html>
