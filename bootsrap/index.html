@@ -7,7 +7,7 @@
     <title>HTML-opetussivu</title>
 
     <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/boo
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/boo
 tstrap.min.css" rel="stylesheet" integrity="sha384-
 1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW
 3" crossorigin="anonymous">
@@ -187,21 +187,142 @@ p {
         <h2>Bootstrap</h2>
 
         <p>
-            Bootstrap on valmis CSS-kirjasto, joka nopeuttaa kehitystä.
+            Bootstrap on valmis CSS-kirjasto, jonka tarkoitus on nopeuttaa sivujen tekemistä.
+            Sen avulla voi tehdä valmiiksi hyvännäköisiä osioita, kuten navigaation, kortteja
+            ja responsiivisen sivupohjan ilman että tarvitsee kirjoittaa kaikkea CSS:ää itse.
+        </p>
+
+        <p>
+            Bootstrapin idea on se, että käytetään valmiita luokkia (classes), jotka hoitavat
+            ulkoasun puolestasi. Riittää että lisää luokan HTML-elementtiin.
         </p>
 
         <ul>
-            <li>Navbar</li>
-            <li>Kortit</li>
-            <li>Grid</li>
+            <li>Navbar – yläreunan valikkopalkki</li>
+            <li>Kortit – valmiita sisältölaatikoita</li>
+            <li>Grid – sivun sarakejärjestelmä</li>
         </ul>
+
+        <hr>
+
+        <!-- NAVBAR -->
+        <h3>1. Navbar</h3>
+
+        <p>
+            Navbar on sivun yläreunassa oleva valikko. Bootstrapissa navbar toimii myös
+            puhelimissa automaattisesti, koska se osaa muuttua hamburger-valikoksi.
+        </p>
+
+        <p>Perusesimerkki navista:</p>
+
+        <pre>
+&lt;nav class="navbar navbar-dark bg-dark"&gt;
+    &lt;div class="container"&gt;
+        &lt;a class="navbar-brand" href="#"&gt;Sivusto&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/nav&gt;
+</pre>
+
+        <p>
+            Ei tarvitse tehdä omaa CSS:ää, koska Bootstrap hoitaa ulkoasun, värit,
+            marginaalit ja responsiivisuuden valmiiksi.
+        </p>
+
+        <hr>
+
+        <!-- KORTIT -->
+        <h3>2. Kortit</h3>
+
+        <p>
+            Kortti (Card) on valmiiksi muotoiltu laatikko, jossa voi olla kuva, otsikko,
+            teksti ja nappi. Näitä käytetään esim. profiileissa, tuotteissa tai uutisissa.
+        </p>
+
+        <p>Kortin perusrakenne:</p>
+
+        <pre>
+&lt;div class="card" style="width: 18rem;"&gt;
+    &lt;img src="https://picsum.photos/300" class="card-img-top" alt="Kuva"&gt;
+
+    &lt;div class="card-body"&gt;
+        &lt;h5 class="card-title"&gt;Kortin otsikko&lt;/h5&gt;
+        &lt;p class="card-text"&gt;Kortin seliteteksti tulee tähän.&lt;/p&gt;
+        &lt;a href="#" class="btn btn-primary"&gt;Lue lisää&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+        <p>
+            Bootstrap lisää korttiin automaattisesti reunat, välit, tekstityylit ja napin
+            ulkoasun. Tarvitaan vain HTML.
+        </p>
+
+        <hr>
+
+        <!-- GRID -->
+        <h3>3. Grid</h3>
+
+        <p>
+            Bootstrapin grid on sivun sarakejärjestelmä. Sivu jaetaan 12 osaan, ja
+            eri kokoisilla näytöillä sarakkeet voivat olla erikokoisia.
+        </p>
+
+        <p>
+            Esimerkiksi:<br>
+            <strong>col-12</strong> = koko leveys pienillä näytöillä<br>
+            <strong>col-md-6</strong> = puolikas leveys keskikokoisilla näytöillä<br>
+            <strong>col-lg-4</strong> = kolmasosa leveydestä isoilla näytöillä
+        </p>
+
+        <p>Esimerkki 3 sarakkeesta:</p>
+
+        <pre>
+&lt;div class="container"&gt;
+    &lt;div class="row"&gt;
+
+        &lt;div class="col-lg-4 col-md-6 col-12 bg-light p-3"&gt;
+            Sarake 1
+        &lt;/div&gt;
+
+        &lt;div class="col-lg-4 col-md-6 col-12 bg-secondary text-white p-3"&gt;
+            Sarake 2
+        &lt;/div&gt;
+
+        &lt;div class="col-lg-4 col-md-6 col-12 bg-light p-3"&gt;
+            Sarake 3
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+        <p>
+            Grid auttaa siinä, että sivu toimii puhelimessa, tabletilla ja tietokoneella
+            ilman erillistä CSS:ää.
+        </p>
+
+        <hr>
+
+        <h3>Yhteenveto</h3>
+
+        <ul>
+            <li>Bootstrap nopeuttaa sivujen rakentamista</li>
+            <li>Komponentit ovat valmiiksi tyyliteltyjä</li>
+            <li>Responsiivisuus toimii automaattisesti</li>
+        </ul>
+
+        <p>
+            Riittää että lisäät Bootstrapin linkin &lt;head&gt;‑osioon ja käytät sen luokkia.
+        </p>
+
 
     </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/boots
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/boots
 trap.bundle.min.js" integrity="sha384-
 ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1
 p" crossorigin="anonymous"></script>
 
 </body>
+
 </html>
