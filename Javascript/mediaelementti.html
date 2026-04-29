@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mediaplayer</title>
+    <link rel="stylesheet" href="styles/media.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <h1 class="otsikko1">Kuvakaruselli</h1>
+
+    <div id="media-container" class="text-center">
+        <img id="media-img" src="" alt="">
+        <h3 id="media-title"></h3>
+
+        <button class="my-btn" onclick="prevItem()"><i class="bi bi-arrow-left"></i></button>
+        <button class="my-btn" onclick="play()"><i class="bi bi-play-fill"></i></button>
+        <button class="my-btn" onclick="nextItem()"><i class="bi bi-arrow-right"></i></button>
+        <button class="my-btn" onclick="stop()"><i class="bi bi-stop-fill"></i></button>
+    </div>
+    <hr>
+    <div>
+        <h1 class="otsikko1">Näytä lista tai ruudukko</h1>
+    </div>
+    <div id="view-buttons">
+        <button class="my-btn" id="listBtn" onclick="setListView()"><i class="bi bi-list"></i></button>
+        <button class="my-btn" id="gridBtn" onclick="setGridView()"><i class="bi bi-grid-3x3-gap-fill"></i></button>
+    </div>
+
+    <div id="image-container" class="grid-container"></div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="scripts/media.js"></script>
+</body>
+
+</html>

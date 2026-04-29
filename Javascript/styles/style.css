@@ -1,0 +1,28 @@
+body {
+  background-color: seashell;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.menu-btn {
+  display: inline-block;
+  padding: 20px 40px;
+  background-color: lightgreen;
+  border-radius: 12px;
+  border: 2px solid #444;
+  font-size: 28px;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  margin: 20px;
+}
+
+.menu-btn:hover {
+  background-color: #b6ffb6;
+  transform: scale(1.05);
+}
+
+p {
+  font-size: 25px;
+}

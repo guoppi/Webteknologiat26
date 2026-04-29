@@ -1,0 +1,91 @@
+body {
+    background-color: seashell;
+}
+
+#media-container {
+    margin: 2% auto;
+    /* 2% marginaali ylös/alas, auto keskittää sivulla */
+    padding: 1%;
+    /* 1% täyte sisäpuolelle */
+    width: 50%;
+    /* div vie 50% sivun leveydestä */
+    text-align: center;
+    /* Sisällön keskitys divin sisällä */
+    overflow: visible;
+    /* Jos sisältö ei mahdu, piilotetaan ylimenevä osa */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+#media-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.otsikko1 {
+    text-align: center;
+}
+
+#media-title {
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    padding: 8px;
+    background-color: lightgreen;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 30px;
+}
+
+
+
+.my-btn {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-inline: 10px;
+    border-radius: 12px;
+    background-color: pink;
+    cursor: pointer;
+    font-size: 50px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.my-btn:hover {
+    background-color: #e6e6e6;
+    transform: scale(1.05);
+}
+
+.my-btn:active {
+    background-color: #d1d1d1;
+    transform: scale(0.95);
+}
+
+.list-container {
+    display: block;
+    text-align: center;
+}
+
+.list-container img {
+    width: 35%;
+    margin: auto;
+    display: block;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+}
+
+.grid-container img {
+    width: 100%;
+    margin: auto;
+}
+
+#view-buttons {
+    text-align: center;
+    margin: 20px;
+}
